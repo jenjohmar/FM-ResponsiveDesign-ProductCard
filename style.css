@@ -1,0 +1,124 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    background: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+}
+
+.container {
+    padding: 80px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.product-card {
+    background: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.product-card__img--mobile {
+    border-radius: 8px 8px 0 0;
+}
+
+.product-card__img--desktop {
+    display: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.product-card__info {
+    padding: 32px;
+}
+
+.product-card__title {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 1;
+    margin: 24px 0;
+    color:hsl(212, 21%, 14%);
+}
+
+.product-card__category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin: 0
+}
+
+.product-card__text {
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+}
+
+.product-card__price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-card__price--new {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    margin: 0 1rem 0 0;
+}
+
+.product-card__price--old {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.product-card__btn {
+    margin-top: 24px;
+    width: 100%;
+    border: none;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 17.5px 0;
+    border-radius: 8px;
+}
+
+.product-card__btn:hover {
+    background: hsl(158, 42%, 18%);
+}
+
+.product-card__btn--content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+.product-card__btn--icon {
+    width: 18px;
+    height: 18px;
+}
+
+@media (min-width: 624px) {
+    .product-card {
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product-card__img--mobile {
+        display: none;
+    }
+
+    .product-card__img--desktop {
+        display: block;
+    }
+}
