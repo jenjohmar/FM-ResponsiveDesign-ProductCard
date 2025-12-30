@@ -17,8 +17,11 @@
 <body>
 <div class="container">
   <div class="product-card">
-    <img src="images/image-product-mobile.jpg" alt="Picture of perfume bottle Gabrielle CHANEL" class="product-card__img--mobile">
-    <img src="images/image-product-desktop.jpg" alt="Picture of perfume bottle Gabrielle CHANEL" class="product-card__img--desktop">
+    <picture class="product-card__images">
+      <source srcset="images/image-product-desktop.jpg" media="(min-width: 624px)">
+      <img src="images/image-product-mobile.jpg" alt="Picture of perfume bottle Gabrielle CHANEL">
+    </picture>
+   
     <div class="product-card__info">
       <p class="product-card__category">Perfume</p>
 
